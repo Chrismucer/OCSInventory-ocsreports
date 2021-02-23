@@ -20,8 +20,8 @@
 21 Primera cita
 22 Fecha fuera de la garantía
 23 Dispositivo
-24 Nombre usuario
-25 Sistema Operativo
+24 Nombre de usuario
+25 Sistema operativo
 26 Memoria
 27 Velocidad de la memoria (MHz)
 28 Número de dispositivos
@@ -270,8 +270,8 @@
 271 Ranura(s)
 272 Puerto(s)
 273 BIOS
-274 Nombre SO
-275 Versión SO
+274 Nombre sistema operativo
+275 Versión sistema operativo
 276 Chipset
 277 Versión
 278 Controlador
@@ -352,7 +352,7 @@
 354 Fidelidad
 355 Entidad
 356 Propietario
-357 Agente de usuario
+357 Agente OCS Inventory
 358 Comodines: ? (Un caracter), * (Varios caracteres)
 359 Número de serie del monitor
 360 Fabricado en (Semana/Año)
@@ -630,7 +630,7 @@
 649 AUTOMÁTICA
 650 MANUAL
 651 Grupo de Redistribución
-652 Maquina(s)
+652 Dispositivo(s)
 653 Lista negra de direcciones MAC
 654 Introduzca una nueva dirección MAC para incluir en lista negra
 655 Inserción realizada
@@ -762,8 +762,8 @@
 780 IPSUBNET diferentes
 781 Equipos con distribución de software pendiente
 782 Equipos con paquetes con error
-783 SO diferentes
-784 Versiones de agentes diferentes
+783 Sistemas operativos diferentes
+784 Agentes OCSInventory diferentes
 785 Procesadores diferentes
 786 Resoluciones diferentes
 787 Equipos con procesador >=
@@ -932,7 +932,7 @@
 950 NOMBRE DE ARCHIVO
 951 ARCHIVO CREADO EN EL
 952 ARCHIVO MODIFICADO EN EL
-953 TAMAÑO
+953 Tamaño
 954 UNA SESIÓN ha sido perdida
 955 NO SE HA ENCONTRADO SISTEMA EN LA BASE DE DATOS
 956 Todo ERRÓNEO
@@ -1113,7 +1113,7 @@
 1131 Orden
 1132 ID orden
 1133 Nueva orden
-1134 No hay datos de descubrimiento de IP
+1134 No hay datos de descubrimiento por IP
 1135 dispositivo(s) ya existe(n) en el grupo de redistribución
 1136 SNMP
 1137 Habilitar/Deshabilitar el servicio SNMP
@@ -1161,11 +1161,11 @@
 1179 Una variable no puede contener caracteres especiales
 1180 No puede estar vacío
 1181 Funcionalidad del servidor de redistribución
-1182 No puede administrar reglas de redistribución, esta funcionalidad está deshabilitada
+1182 No puede administrar reglas de redistribución, esta funcionalidad está deshabilitada.
 1183 Lista de paquetes para crear
 1184 Clave agregada
 1185 Clave actualizada
-1186 Tus datos están actualizados
+1186 Sus datos han sido actualizados.
 1187 La configuración está pendiente
 1188 Este grupo está declarado como un perímetro de PRUEBA
 1189 Este grupo está declarado como un perímetro de RESTRICCIÓN
@@ -1349,8 +1349,8 @@
 1367 Red
 1368 CPU
 1369 Versión PHP
-1370 Servidor Web
-1371 Base de datos del servidor
+1370 Versión servidor web
+1371 Versión base de datos
 1372 Kernel
 1373 Distribución
 1374 Acceda al sitio web
@@ -1437,14 +1437,15 @@
 1455 Interfaz virtual
 1456 Número de teléfono
 1457 Enlazar la red IpDiscover al TAG del dispositivo </br><b style="color:#d9534f;">Cerrar sesión / Iniciar sesión después de actualizar esta configuración</b>
-
+1458 caracteres
+1459 Tiempo entre escaneos CVE
 1460 Gestionar CVE-search
 1461 Habilitar CVE Reporting
 1462 URL del host de CVE-search que se utilizará para la presentación de informes
 1463 CVE Reporting
 1464 CVE Reporting no está activado.
 1465 Por CVSS
-1466 Por favor, consulte la documentación para configurar CVE Reporting : <a href="http://wiki.ocsinventory-ng.org/04.Management-console-and-its-advanced-features/CVE-Search-management/"> Gestión de informes de búsqueda CVE </a>
+1466 Por favor, consulte la documentación para configurar CVE Reporting:<br><a href="http://wiki.ocsinventory-ng.org/04.Management-console-and-its-advanced-features/CVE-Search-management/"> Gestión de informes de búsqueda CVE</a>
 1467 Enlace
 1468 Puntuación de vulnerabilidad entre
 1469 Seleccione las categorías de software que no desea procesar
@@ -1456,7 +1457,7 @@
 1475 Nombre o Regex
 1476 Resultado de la publicación
 1477 Nombre del resultado
-1478 O importar un archivo CSV
+1478 Importar archivo CSV
 1479 Importar
 1480 Descargar archivo de ejemplo CSV
 1481 Historial CVE
@@ -1465,6 +1466,19 @@
 1484 Tiempo de validez de un CVE después del escaneo de OCS Inventory
 1485 Por software
 1486 Por dispositivo
+1487 La autenticación ha sido bloqueada debido a demasiados intentos. (%time% segundos restantes)
+1488 Activar la seguridad de autenticación
+1489 Número de intentos
+1490 Tiempo de espera
+1491 Activar la seguridad de contraseña
+1492 Número mínimo de caracteres 
+1493 Requiere el uso de números
+1494 Exige el uso de mayúsculas
+1495 Requiere el uso de caracteres especiales
+1496 La contraseña debe contener al menos
+1497 La contraseña debe contener al menos una letra mayúscula
+1498 La contraseña debe contener al menos un número
+1499 La contraseña debe contener al menos un carácter especial
 
 1500 Categoría de software
 1501 Nueva categoría
@@ -1472,7 +1486,7 @@
 1503 Añadir software
 1504 Expresión regular o nombre de software
 1505 Seleccione la categoría predeterminada para el software
-1506 No se ha creado ninguna categoría
+1506 No se ha creado ninguna categoría.
 1507 Versión de software
 1508 Proveedor de software
 1509 Configuraciones avanzadas
@@ -1494,6 +1508,9 @@
 1556 Archivar / Restaurar
 1557 TODOS LOS DISPOSITIVOS
 1558 Archivos
+
+1560 Purga de datos antiguos de IPDiscover
+1561 Periodo de validez de los datos de IPDiscover
 
 1600 Panel principal
 1601 Grupos dinámicos
@@ -1530,7 +1547,7 @@
 2019 ya fueron importados
 2020 El archivo install.php existe en el directorio ocsreports
 2021 Su directorio de registros GUI no se puede escribir
-2022 No puede enviar un archivo más grande que
+2022 No puede enviar un archivo más grande de
 2023 Bórralo
 2024 El inicio de sesión/contraseña SQL predeterminado se activa en su base de datos:
 2025 Cambie su contraseña para el inicio de sesión ocs en MySQL
@@ -1543,7 +1560,7 @@
 2032 es menor que esta versión
 2033 Instalación automática iniciada.
 2034 La configuración de la base de datos no se completó. Instalación automática iniciada
-2035 <b>ERROR:</b> Las sesiones para PHP no está instalado correctamente. <br> Intente instalar el paquete php-session.
+2035 <b>ERROR:</b> Las sesiones para PHP no está instalado correctamente. <br>Intente instalar el paquete php-session.
 2036 <b>ADVERTENCIA:</b> XML para PHP no está instalado correctamente, no podrá usar IpDiscover-util.
 2037 <b>ERROR:</b> MySQL para PHP no está instalado correctamente. <br>Intente instalar MySQL para el paquete PHP (Debian: php5-mysql)
 2038 <b>ADVERTENCIA:</b> GD para PHP no está instalado correctamente. <br>No podrá ver ninguna pantalla gráfica. <br>Intente descomentar la extensión = php_gd2.dll (Windows) quitando el punto y coma en el archivo php.ini, o intente instalar el paquete php5-gd (Linux).
@@ -1562,19 +1579,19 @@
 2053 Espere, la actualización de la base de datos puede tardar hasta 30 minutos ...
 2054 falló, KEY es demasiado largo. Necesita volver a realizar esta consulta más adelante o experimentará problemas graves de rendimiento.
 2055 Base de datos generada con éxito
-2056 Archivo de configuración de MySQL escrito con éxito
+2056 Archivo de configuración MySQL escrito con éxito
 2057 Base de datos existente actualizada
 2058 Comprobación del motor de la base de datos ...
 2059 <b>ERROR:</b> La consulta falló
 2060 <b>ERROR:</b> La consulta para mostrar el estado de la tabla falló
-2061 <b>ERROR:</b> Falló la conversión de InnoDB, instala la compatibilidad con el motor InnoDB MySQL en su servidor o experimentará graves problemas de rendimiento. <br> (Intente descomentar skip-innodb en su archivo de configuración de MySQL). Reinstale cuando se corrija.
+2061 <b>ERROR:</b> Falló la conversión de InnoDB, instala la compatibilidad con el motor InnoDB MySQL en su servidor o experimentará graves problemas de rendimiento. <br>(Intente descomentar skip-innodb en su archivo de configuración de MySQL). Reinstale cuando se corrija.
 2062 <b>ERROR:</b> HEAP conversión fallida, instale el soporte de motor HEAP MySQL en su servidor <br> o experimentará graves problemas de rendimiento.
 2063 Motor de base de datos actualizado con éxito
 2064 tabla(s) modificadas
-2065 <b>ERROR:</b> El instalador finalizó incorrectamente, ejecuta de nuevo install.php una vez que el problema se haya resuelto.
+2065 <b>ERROR:</b> El instalador finalizó incorrectamente, ejecute de nuevo install.php una vez resuelto el problema.
 2066 <b>ADVERTENCIA:</b> Faltan ARCHIVOS en el directorio, no se puede importar
 2067 de eso
-2068 no fue insertado. Debe establecer el valor de MySQL max_allowed_packet en al menos 2 MB
+2068 no fue insertado. Debe establecer el valor MySQL max_allowed_packet en al menos 2 MB
 2070 falta, si no reinstala la función de DESPLIEGUE, no estará disponible
 2071 <b>ADVERTENCIA:</b> Uno o más archivos ya estaban insertados
 2072 Archivos de despliegue insertados con éxito
@@ -1584,7 +1601,7 @@
 2077 Inserción de subred.csv redes
 2078 <b>ERROR:</b> No se pudo insertar, revise el campo en color rojo
 2079 en la tabla de subred, error
-2080 <b>ADVERTENCIA:</b> Revise campo en color rojo
+2080 <b>ADVERTENCIA:</b> Revise el campo en color rojo
 2081 no se insertó (IP o máscara no válida)
 2082 Red Netid informática. Por favor espere...
 2083 <b>ERROR:</b> No se pudo actualizar netid a
@@ -1600,16 +1617,16 @@
 2094 <b>ERROR:</b> No se pudo limpiar el mapa de red
 2095 líneas de netmap borradas
 2096 Por favor introduzca la etiqueta del cuadro de entrada de etiqueta de cliente de Windows:
-2097 Déjelo vacío si no desea que se muestre una ventana emergente en cada lanzamiento del agente
+2097 Déjelo vacío si no desea que se muestre una ventana emergente en cada lanzamiento del agente.
 2098 <b>ERROR:</b> ZIP para PHP no está instalado correctamente. <br>Intente descomentar el comentario de extensión = php_zip.dll (Windows) eliminando el punto y coma en el archivo php.ini, o intente instalar el paquete libphp-pclzip (Linux).
-2099 <b>ERROR:</b> Este inicio de sesión de MySQL no tiene los permisos para crear la base de datos
+2099 <b>ERROR:</b> Este inicio de sesión MySQL no tiene los permisos para crear la base de datos
 2100 Actualizar información de agentes antiguos
 2101 Agregar por script
 2102 <b>ADVERTENCIA:</b> Si cambia el nombre predeterminado de la base de datos (ocsweb), no se olvide de actualizar los archivos del motor de ocs.2103 Modo DEMO: no puede actualizar los datos
 2103 Modo DEMO: No puede actualizar los datos
 2104 ESTÁS OBSERVANDO LA VERSIÓN DEMO DE
 2105 Su base de datos está OK. <br> No es necesaria ninguna acción.
-2106 en la configuración de MySQL, la variable 'max_allowed_packet' permite solo el tamaño del archivo <
+2106 En la configuración de MySQL, la variable 'max_allowed_packet' permite sólo un tamaño de archivo <
 2107 La versión de la interfaz WEB es más baja que la versión de la base de datos
 2108 La versión de la base de datos <b>DEBE</b> ser inferior o igual a la versión de la interfaz web
 2109 Versión actual
@@ -1701,7 +1718,7 @@
 7011 es un complemento no válido, verifique sus fuentes.
 7012 ¡Instalación cancelada!
 7013 Instalado
-7014 Actualmente no hay ningún complemento disponible para su instalación
+7014 Actualmente no hay ningún complemento disponible para su instalación.<br>
 7015 ¡Seleccione al menos un dispositivo!
 7016 MTU
 7017 ¡Extensión instalada con éxito! <br> Por favor, cierre la sesión y vuelva a abrirla para terminar la instalación de la consola.
@@ -1738,12 +1755,12 @@
 8023 ... Leer más
 8024 Cerrar noticias
 8025 Volver al menú de noticias
-8026 Activar las noticias de OCS Inventory en el dashboard
+8026 Activar las noticias de OCSInventory en el panel principal
 8027 Se ha producido un problema en la recuperación de datos de las noticias de OCS
 8028 Tiene noticias recientes
 8029 no es editable
 
-8100 SAAS Inventory
+8100 Inventario SAAS
 8101 Lista SAAS
 8102 Añadir SAAS
 8103 DNS asociado
@@ -1772,7 +1789,7 @@
 9011 Filtrar por tipo:
 9012 Detalles SNMP
 9013 Mostrar detalles
-9014 La configuración SNMP está vacía. Consulte la documentación para saber cómo configurar SNMP: <a href="http://wiki.ocsinventory-ng.org/06.Network-Discovery-with-OCS-Inventory-NG/Managing-and-using-SNMP-feature/">Managing SNMP on Web Console</a>
+9014 La configuración SNMP está vacía.<br>Consulte la documentación para saber cómo configurar SNMP:<br><a href="http://wiki.ocsinventory-ng.org/06.Network-Discovery-with-OCS-Inventory-NG/Managing-and-using-SNMP-feature/">Managing SNMP on Web Console</a>
 9015 Uso para la reconciliación
 9016 Seleccione el tipo que desea configurar.
 9017 OID numérico
@@ -1780,6 +1797,15 @@
 9019 Cadena de nombres OID
 9020 Añadir al modelo SNMP
 9021 Buscar una fila específica
+9022 No se puede crear un tipo con un OID numérico vacío y un nombre de OID vacío.
+9023 Nombre del tipo existente
+9024 Se ha producido un error al crear el tipo
+9025 Etiqueta existente
+9026 Se ha producido un error al crear la etiqueta
+9027 Se ha producido un error al crear la configuración
+9028 Se ha producido un error al borrar el tipo
+9029 Se ha producido un error al borrar la etiqueta
+9030 Se ha producido un error al borrar la configuración
 
 9100 Ruta de la clave SSL 
 9101 Ruta del certificado SSL
@@ -1787,3 +1813,26 @@
 9103 Modo SSL
 9104 Ruta del certificado CA
 9105 Puerto MySQL
+
+9200 Despliegue de paquetes para el dispositivo
+9201 Despliegue de paquetes para la selección
+9202 Despliegue de paquetes para el grupo
+
+9500 Combinar selección
+9501 Fusionar todo
+9502 Dispositivo(s) duplicado(s) :
+
+9600 Campo de conciliación CSV :
+9601 Campo de conciliación OCS :
+9602 Campo vacío
+9603 No hay ningún dispositivo que corresponda en la base de datos de OCS
+9604 Error al actualizar los valores
+9605 Datos administrativos importados, puede ver los errores más abajo
+9606 No ha sido posible leer el archivo CSV, el separador utilizado no parece corresponder al separador definido en la configuración general de OCS.
+9607 Archivo CSV importado correctamente
+9608 El campo de reconciliación CSV deberá permitir la identificación de cada dispositivo y deberá corresponder a un campo de la base de datos OCS (nombre del dispositivo o número de serie).
+9609 El campo de reconciliación OCS debe coincidir con el campo CSV previamente seleccionado.
+9610 Por favor, seleccione los campos correspondientes:
+9611 Directorio de archivos temporales
+9612 Importar desde un archivo CSV
+9613 La importación del archivo CSV ha fallado, por favor compruebe la configuración del directorio de archivos temporales en la configuración general de OCS
